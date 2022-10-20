@@ -3,7 +3,7 @@ esta é uma aplicação feita com o auxilio do terraform, aprendido no curso da 
 para testar o funcionamento é preciso criar o arquivo terraform.tfvars com a estrutura abaixo
 
 
-do_token     = "<token de acesso na digitalOcean>"
+do_token     = "token de acesso na digitalOcean"
 
 ssh_key_name = "jornada"
 
