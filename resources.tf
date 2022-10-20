@@ -3,10 +3,10 @@ resource "digitalocean_droplet" "jenkins" {
   name     = "jenkins"
   region   = var.region
   size     = "s-2vcpu-2gb"
-  ssh_keys = [data.digital_ssh_key.jornada.id]
+  ssh_keys = [data.digitalocean_ssh_key.jornada.id]
 }
 
-data "digital_ssh_key" "ssh_key" {
+data "digitalocean_ssh_key" "jornada" {
   name = var.ssh_key_name
 }
 
